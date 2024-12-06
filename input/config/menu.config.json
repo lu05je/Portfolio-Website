@@ -1,0 +1,63 @@
+[
+    {
+        "name": "Navbar",
+        "position": "mainMenu",
+        "items": [
+            {
+                "id": 1732259488947,
+                "label": "Home",
+                "title": "",
+                "type": "page",
+                "target": "_self",
+                "rel": "",
+                "link": 1,
+                "cssClass": "",
+                "isHidden": false,
+                "items": []
+            },
+            {
+                "id": 1732260251280,
+                "label": "About Me",
+                "title": "",
+                "type": "page",
+                "target": "_blank",
+                "rel": "",
+                "link": 2,
+                "cssClass": "",
+                "isHidden": false,
+                "items": []
+            },
+            {
+                "id": 1732262352822,
+                "label": "Projects",
+                "title": "",
+                "type": "page",
+                "target": "_self",
+                "rel": "",
+                "link": 3,
+                "cssClass": "",
+                "isHidden": false,
+                "items": []
+            },
+            {
+                "id": 1732269442592,
+                "label": "Hobbys",
+                "title": "",
+                "type": "page",
+                "target": "_self",
+                "rel": "",
+                "link": 4,
+                "cssClass": "",
+                "isHidden": false,
+                "items": []
+            }
+        ],
+        "maxLevels": "-1"
+    },
+    {
+        "name": "Footer",
+        "position": "footerMenu",
+        "items": [],
+        "maxLevels": "1"
+    }
+]

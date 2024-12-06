@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: file:///C:\Users\Luca\OneDrive\Dokumente\Publii\sites\portfolio-website\preview/sitemap.xml

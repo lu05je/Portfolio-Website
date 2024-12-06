@@ -1,0 +1,369 @@
+/*
+ * Put your custom CSS code here
+ */
+ body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    position: relative;
+    background: url('https://lucasportfoliowebsite.netlify.app/media/posts/1/Berg.jpg');
+    background-size: cover;
+}
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Halbtransparentes schwarzes Overlay */
+    z-index: -1; /* Stelle sicher, dass das Overlay hinter dem Inhalt bleibt */
+}
+.quote-overlay {
+    background-color: rgba(0, 0, 0, 0.4); /* Transparenter schwarzer Hintergrund */
+    padding: 20px;
+    border-radius: 10px;
+}
+h1 {
+    font-size: 3em;
+    margin: 0.5em 0;
+    color: grey;
+}
+p {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+    color: white;
+}
+.contact {
+    margin-top: 2em;
+    font-size: 1.2em;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex; /* Elemente nebeneinander platzieren */
+    align-items: center; /* Vertikal zentrieren */
+    justify-content: space-between; /* Platz zwischen den Elementen einfügen */
+    gap: 20px; /* Abstand zwischen Zitat und Bild */
+}
+
+.quote-overlay,
+.image-container {
+    flex: 1 1 50%; /* Beide Elemente nehmen jeweils 50% der Breite ein */
+    display: flex; /* Ermöglicht flexibles Layout der Inhalte */
+    align-items: center; /* Zentriert die Inhalte vertikal */
+    justify-content: center; /* Zentriert die Inhalte horizontal */
+}
+
+.image-container img {
+    max-width: 100%; /* Bild passt sich an die Containerbreite an */
+    height: auto; /* Beibehaltung des Seitenverhältnisses */
+}
+
+
+
+/* About-Me-Sektion */
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 10px;
+    background-color: #acabab;
+    align-items: center;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    justify-content: center; /* Zentriert horizontal */
+    align-items: center;    /* Zentriert vertikal */
+}
+
+/* Linke Seite: Bild */
+.about-me__image {
+    flex: 1;
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 30px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-me__image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Rechte Seite: Content */
+.about-me__content {
+    flex: 2;
+    padding: 20px;
+}
+
+.about-me h1 {
+    font-size: 28px;
+    color: #ad2222;
+    margin-bottom: 20px;
+}
+
+.about-me p {
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Timeline Styling */
+.timeline {
+    position: relative;
+    margin-top: 20px;
+    padding-left: 30px;
+    border-left: 2px solid #e3e3e3;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+    text-decoration: none; /* Entfernt Unterstrich von Links */
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.timeline-dot {
+    width: 16px;
+    height: 16px;
+    background-color: #ad2222;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: -40px; /* Zentriert den Punkt auf der Linie */
+    top: 50%; /* Positioniert den Punkt vertikal in der Mitte */
+    transform: translateY(-50%); /* Zentriert den Punkt */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-info {
+    padding: 15px 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-date {
+    font-size: 14px;
+    color: #ad2222;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.timeline-info h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 0 0 5px;
+}
+
+.timeline-info p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+.timeline-item:hover {
+    transform: scale(1.02); /* Leichte Vergrößerung beim Hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schatteneffekt */
+    background-color: #eef; /* Leicht andere Hintergrundfarbe */
+}
+
+.timeline-item h3, 
+.timeline-item p, 
+.timeline-item span {
+    margin: 0;
+    text-decoration: none; /* Wichtig für Texte innerhalb des Links */
+}
+
+
+/* Stärken-Section */
+.strengths {
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    background-color: #cfc9c9;
+}
+
+.strengths h2 {
+    font-size: 28px;
+    color: #ad2222;
+    margin-bottom: 30px;
+}
+
+/* Container für die Items */
+.strengths-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Abstand zwischen den Items */
+}
+
+
+
+/* Einzelnes Item */
+.strengths-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+    width: 150px; /* Feste Breite */
+    text-align: center;
+    cursor: pointer; /* Zeigt, dass es interaktiv ist */
+    flex: 1 1 150px; /* Flexibles Layout: Items sind mindestens 150px breit */
+    max-width: 200px; /* Begrenzung der maximalen Breite */
+    text-align: center; /* Zentriert den Inhalt */
+}
+
+/* Hover-Effekt */
+.strengths-item:hover {
+    transform: scale(1.05); /* Vergrößert das Item leicht */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #eef; /* Hebt die Hintergrundfarbe hervor */
+}
+
+/* Icons */
+.strengths-icon {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #ad2222; /* Farbe für das Icon */
+}
+
+/* Text */
+.strengths-item p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+
+/* Projekte-Section */
+.projects {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 28px;
+    color: #ad2222;
+    margin-bottom: 30px;
+}
+
+/* Container für die Projekt-Items */
+.projects-items {
+    display: flex;
+    justify-content: space-between; /* Abstand zwischen den Items */
+    flex-wrap: wrap; /* Aktiviert Umbruch bei zu wenig Platz */
+    gap: 30px; /* Größerer Abstand zwischen den Items */
+    margin: 0 auto; /* Zentriert den Container */
+}
+
+/* Einzelnes Projekt-Item */
+.project-item {
+    display: flex; /* Flexbox aktivieren */
+    flex-direction: column; /* Stapelt Inhalt vertikal */
+    align-items: center; /* Zentriert Inhalt horizontal */
+    justify-content: flex-start; /* Vertikale Ausrichtung oben */
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 400px; /* Breitere Container */
+    flex: 1 1 calc(30% - 30px); /* Flexibles Layout, ca. 30% pro Item */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+/* Hover-Effekt */
+.project-item:hover {
+    transform: scale(1.05); /* Vergrößert das Item leicht */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Größere und zentrierte Bilder */
+.project-item img {
+    display: block;
+    margin: 0 auto; /* Bild horizontal zentrieren */
+    width: 100%; /* Bild passt sich der Containerbreite an */
+    max-width: 350px; /* Maximale Breite des Bildes */
+    height: auto; /* Beibehaltung des Seitenverhältnisses */
+    object-fit: contain; /* Das gesamte Bild bleibt sichtbar */
+    border-radius: 8px; /* Optional: Abgerundete Ecken */
+    margin-bottom: 20px;
+}
+
+/* Projekt-Titel */
+.project-item h3 {
+    margin: 15px 0;
+    font-size: 20px; /* Größerer Titeltext */
+    color: #ad2222;
+    text-align: center;
+}
+
+/* Verlinkter Titel */
+.project-item h3 a {
+    text-decoration: none;
+    color: #ad2222;
+    transition: color 0.2s ease;
+}
+
+.project-item h3 a:hover {
+    color: #7b1515; /* Dunklere Farbe beim Hover */
+}
+
+/* Projekt-Beschreibung */
+.project-item p {
+    font-size: 16px; /* Größere Beschreibung */
+    color: #333;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .project-item {
+        flex: 1 1 calc(45% - 30px); /* Zwei Items pro Reihe */
+    }
+}
+
+/* Responsivität */
+@media (max-width: 768px) {
+    .about-me {
+        flex-direction: column;
+    }
+
+    .about-me__image, .about-me__content {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .about-me__image img {
+        max-width: 80%;
+    }
+
+    .strengths-items {
+        flex: 1 1 100%; /* Items nehmen die volle Breite des Containers ein */
+    }
+    .project-item {
+        flex: 1 1 100%; /* Ein Item pro Reihe */
+    }
+}

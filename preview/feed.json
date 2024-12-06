@@ -1,0 +1,14 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Portfolio Website",
+    "description": "",
+    "home_page_url": "file:///C:\Users\Luca\OneDrive\Dokumente\Publii\sites\portfolio-website\preview",
+    "feed_url": "file:///C:\Users\Luca\OneDrive\Dokumente\Publii\sites\portfolio-website\preview/feed.json",
+    "user_comment": "",
+    "icon": "file:///C:/Users/Luca/OneDrive/Dokumente/Publii/sites/portfolio-website/preview/media/website/Logo.png",
+    "author": {
+        "name": "Luca Jenerwein"
+    },
+    "items": [
+    ]
+}
